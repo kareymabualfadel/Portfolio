@@ -1,0 +1,72 @@
+.page-intro {
+  margin-bottom: 20px;
+}
+
+.page-title {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+
+.page-subtitle {
+  font-size: 0.96rem;
+  color: var(--text-muted);
+  max-width: 620px;
+}
+
+.page-section {
+  margin-bottom: 18px;
+}
+
+.page-section--two-column {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+}
+
+.section-heading {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.info-card {
+  background: var(--bg-elevated);
+  border-radius: var(--radius-lg);
+  padding: 14px;
+  border: 1px solid rgba(55, 65, 81, 0.8);
+  font-size: 0.9rem;
+}
+
+.tag-list {
+  list-style: none;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.88rem;
+}
+
+.stack-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.stack-item {
+  background: var(--bg-elevated);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+  border: 1px solid rgba(55, 65, 81, 0.7);
+  font-size: 0.88rem;
+}
+
+.stack-item h3 {
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+/* Responsive tweak */
+@media (max-width: 800px) {
+  .page-section--two-column {
+    grid-template-columns: 1fr;
+  }
+}
